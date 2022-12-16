@@ -1541,10 +1541,10 @@ static int rtl8367b_detect(struct rtl8366_smi *smi)
 	}
 
 	switch (chip_ver) {
+	case 0x0020:
 	case 0x1000:
 		chip_name = "8367RB";
 		break;
-	case 0x0020:
 	case 0x1010:
 		chip_name = "8367R-VB";
 		break;
